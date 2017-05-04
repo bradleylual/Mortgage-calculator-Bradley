@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/weeklyPayment"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/weeklyInterest"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthlyPayment"
+        android:layout_weight="0.08" />
+
+    <TextView
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthlyInterest"
+        android:layout_weight="0.09" />
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/yearlyPayment"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/yearlyInterest"
+        android:layout_weight="0.09" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/goBack" />
+</LinearLayout>

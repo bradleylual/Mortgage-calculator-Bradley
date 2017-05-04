@@ -13,5 +13,177 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Home Value:"
+        android:id="@+id/homevalueText" />
+
+    <TextView
+        android:text="Loan Amount:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoanAmountText"
+        android:layout_below="@+id/HomeValueeditText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Interest Rate:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/interestrateText"
+        android:layout_below="@+id/LoanAmountText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Loan Term:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interestrateText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/LoanTermText" />
+
+    <TextView
+        android:text="Start Date:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoanTermText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:id="@+id/StartDateText" />
+
+    <TextView
+        android:text="Property Tax:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StartDateText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/PropertyTaxText" />
+
+    <TextView
+        android:text="PMI:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PropertyTaxText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/PMIText" />
+
+    <TextView
+        android:text="Home Insurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PMIText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/HomeInsurText" />
+
+    <TextView
+        android:text="Monthly HOA:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HomeInsurText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/MonthlyHOAText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/HomeValueeditText"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/LoanAmounteditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/LoanAmounteditText"
+        android:layout_above="@+id/InterRateeditText"
+        android:layout_alignStart="@+id/InterRateeditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/InterRateeditText"
+        android:layout_below="@+id/interestrateText"
+        android:layout_alignStart="@+id/LoanTermeditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/LoanTermeditText"
+        android:layout_above="@+id/StartDateeditText"
+        android:layout_alignStart="@+id/StartDateeditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/StartDateeditText"
+        android:layout_alignTop="@+id/StartDateText"
+        android:layout_alignStart="@+id/PropertyTaxeditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/PropertyTaxeditText"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/PMIeditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/PMIeditText"
+        android:layout_below="@+id/PropertyTaxeditText"
+        android:layout_alignStart="@+id/HomeInsuranceeditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/PMIeditText"
+        android:layout_toEndOf="@+id/HomeInsurText"
+        android:id="@+id/HomeInsuranceeditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/HomeInsuranceeditText"
+        android:layout_alignEnd="@+id/HomeInsuranceeditText"
+        android:id="@+id/MonthlyHOAeditText" />
+
+    <Button
+        android:text="Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/calculateButton"
+        android:layout_below="@+id/MonthlyHOAeditText"
+        android:layout_toEndOf="@+id/PMIText" />
+
+    <Button
+        android:text="Payment Summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentButton"
+        android:layout_alignBaseline="@+id/calculateButton"
+        android:layout_alignBottom="@+id/calculateButton"
+        android:layout_alignEnd="@+id/MonthlyHOAeditText" />
+
 </RelativeLayout>
